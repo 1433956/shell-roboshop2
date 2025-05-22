@@ -67,7 +67,7 @@ maven_setup() {
     VALIDATE $? "installing maven"
     mvn clean package &>>$LOG_FILE
     VALIDATE $? "minstalling maven depdedencies"
-    mv /target/shipping-1.0.jar shipping.jar &>>$LOG_FILE
+    mv target/shipping-1.0.jar  shipping.jar &>>$LOG_FILE
     VALIDATE $? "renaming jar file"
 }
 #python_setup
