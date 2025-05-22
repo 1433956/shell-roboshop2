@@ -2,7 +2,7 @@
 
 source ./common.sh
 check_root
-
+SYS_DIR=$PWD
 dnf module disable nginx -y &>>$LOG_FILE
 VALIDATE $? "Disabling Default Nginx"
 
