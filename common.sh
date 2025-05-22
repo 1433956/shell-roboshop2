@@ -2,11 +2,10 @@
 start_time=$(date +%s)
 userid=$(id -u)
 #status_codes
-
-$R="\e[31m"
-$Y="\e[33m"
-$G="\e[32m"
-$N="\e[0m"
+R="\e[31m"
+Y="\e[33m"
+G="\e[32m"
+N="\e[0m"
 
 #default paths
 LOG_FOLDER="/usr/log/roboshop-logs"
