@@ -29,7 +29,7 @@ VALIDATE $? "unzipping frontend"
 rm -rf /etc/nginx/nginx.conf &>>$LOG_FILE
 VALIDATE $? "Remove default nginx conf"
 
-cp $SYS_DIR/nginx.conf /etc/nginx/nginx.conf
+cp nginx.conf /etc/nginx/nginx.conf
 VALIDATE $? "Copying nginx.conf"
 
 systemctl restart nginx 
