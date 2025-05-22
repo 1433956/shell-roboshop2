@@ -16,7 +16,7 @@ LOG_FILE=$LOG_FOLDER/$SCRIPT_NAME.log
 mkdir -p $LOG_FOLDER
 SYS_DIR=$PWD
 #script execution time
-echo -e "$G Script started at :: $start_time $N" | tee -a $LOG_FILE
+echo -e "$G Script started at :: $(date) $N" | tee -a $LOG_FILE
 
 #app_setup and project_setup
  app_setup() {
