@@ -9,11 +9,12 @@
 
  dnf install mysql -y &>>$LOG_FILE
  echo "Please enter root password to setup"
- read -s MYSQL_ROOT_PASSWORD
+ #read -s
+MYSQL_ROOT_PASSWORD=RoboShop@1
  VALIDATE $? "installing my sql"
 
  
-mysql -h mysql.devops73.site -uroot -p$MYSQL_ROOT_PASSWORD -e 'use cities' &>>$LOG_FILE
+mysql -h mysql.devops73.site -uroot -pRoboShop@1 -e 'use cities' &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     mysql -h mysql.devops73.site -uroot -p$MYSQL_ROOT_PASSWORD < /app/db/schema.sql &>>$LOG_FILE
