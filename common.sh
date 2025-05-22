@@ -25,7 +25,7 @@ echo -e "$G Script started at :: $(date) $N" | tee -a $LOG_FILE
  if [ $? -ne 0 ]
  then
       echo -e "$R initiated system user creation $N " &>>$LOG_FILE
-      useradd --system --home /sbin/nologin --shell --comment "creating sysytem user" roboshop
+      useradd --system --home /app --shell /sbin/nologin --comment "creating sysytem user" roboshop
        VALIDATE $? "created system user"
 else
      echo -e "$G System user is created $N"&>>$LOG_FILE
