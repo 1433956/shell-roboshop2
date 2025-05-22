@@ -87,7 +87,7 @@ python_setup() {
 
 system_setup() {
 
-    cp $SYS_DIR/$app_name.servie /etc/systemd/system/$app_name.service &>>$LOG_FILE
+    cp $SYS_DIR/$app_name.service /etc/systemd/system/$app_name.service &>>$LOG_FILE
     VALIDATE $? "copying $app_name service"
 
     systemctl daemon-reload &>> $LOG_FILE
