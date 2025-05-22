@@ -14,7 +14,7 @@ LOG_FILE=$LOG_FOLDER/$SCRIPT_NAME.log
 
 #Folder creation
 mkdir -p $LOG_FOLDER
-$SYS_DIR=$PWD
+SYS_DIR=$PWD
 #script execution time
 echo -e "$G Script started at :: $start_time $N" | tee -a $LOG_FILE
 
