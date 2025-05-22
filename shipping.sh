@@ -3,7 +3,7 @@
  app_name=shipping
 
  check_root
- app_name
+ app_setup
  maven_setup
  system_setup
 
